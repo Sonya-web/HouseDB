@@ -1,0 +1,335 @@
+﻿<Page x:Class="_1.Pages.Realty.MainRealtyPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_1.Pages.Realty"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="580"
+      Title="MainRealtyPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="5 5 5 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="0" BorderBrush="Transparent" Margin="0 0 5 0">
+                <Border.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="C:\Users\polus\OneDrive\Рабочий стол\Соня\2 семестр\ВПКС\ЛР8\Images\FON1.png"/>
+                </Border.Background>
+            </Border>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="1" BorderBrush="#CB3434" BorderThickness="0.5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Купить квартиру" Grid.Row="0" HorizontalAlignment="Left"/>
+                    <Label Content="1-комнатные" Grid.Row="1" Style="{StaticResource Label}"/>
+                    <Label Content="2-комнатные" Grid.Row="2" Style="{StaticResource Label}"/>
+                    <Label Content="3-комнатные" Grid.Row="3" Style="{StaticResource Label}"/>
+                    <Label Content="Свободная планировка" Grid.Row="4" Style="{StaticResource Label}"/>
+                    <Label Content="Квартиры-студии" Grid.Row="5" Style="{StaticResource Label}"/>
+                    <Label Content="Квартиры в квартире" Grid.Row="6" Style="{StaticResource Label}"/>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="5 5 5 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="0" BorderBrush="#CB3434" BorderThickness="0.5" Margin="0 0 5 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Снять посуточно" Grid.Row="0" HorizontalAlignment="Left"/>
+                    <Label Content="Квартиры посуточно" Grid.Row="1" Style="{StaticResource Label}"/>
+                    <Label Content="Коттеджи на сутки" Grid.Row="2" Style="{StaticResource Label}"/>
+                    <Label Content="Комнаты на сутки" Grid.Row="3" Style="{StaticResource Label}"/>
+                    <Label Content="Хостелы" Grid.Row="4" Style="{StaticResource Label}"/>
+                </Grid>
+            </Border>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="1" BorderBrush="#CB3434" BorderThickness="0.5" Margin="0 0 5 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Загородная недвижимость" Grid.Row="0" HorizontalAlignment="Left"/>
+                    <Label Content="Каталог посёлков" Grid.Row="1" Style="{StaticResource Label}"/>
+                    <Label Content="Купить дом" Grid.Row="2" Style="{StaticResource Label}"/>
+                    <Label Content="Купить танхаус" Grid.Row="3" Style="{StaticResource Label}"/>
+                    <Label Content="Купить участок" Grid.Row="4" Style="{StaticResource Label}"/>
+                    <Label Content="Снять дом надолго" Grid.Row="5" Style="{StaticResource Label}"/>
+                </Grid>
+            </Border>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="2" BorderBrush="#CB3434" BorderThickness="0.5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Коммерческая недвижимость" Grid.Row="0" HorizontalAlignment="Left"/>
+                    <Label Content="Купить склад" Grid.Row="1" Style="{StaticResource Label}"/>
+                    <Label Content="Купить гараж" Grid.Row="2" Style="{StaticResource Label}"/>
+                    <Label Content="Купить офис" Grid.Row="3" Style="{StaticResource Label}"/>
+                    <Label Content="Арендовать офис" Grid.Row="4" Style="{StaticResource Label}"/>
+                    <Label Content="Арендовать помещение" Grid.Row="5" Style="{StaticResource Label}"/>
+                    <Label Content="Арендовать торговую площадь" Grid.Row="6" Style="{StaticResource Label}"/>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="5 5 5 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="0" BorderBrush="#CB3434" BorderThickness="0.5" Margin="0 0 5 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Новостройки" Grid.Row="0" HorizontalAlignment="Left"/>
+                    <Label Content="Каталог ЖК" Grid.Row="1" Style="{StaticResource Label}"/>
+                    <Label Content="Сданные новостройки" Grid.Row="2" Style="{StaticResource Label}"/>
+                    <Label Content="Строящиеся новостройки" Grid.Row="3" Style="{StaticResource Label}"/>
+                </Grid>
+            </Border>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="1" BorderBrush="#CB3434" BorderThickness="0.5" Margin="0 0 5 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Снять квартиру" Grid.Row="0" HorizontalAlignment="Left"/>
+                    <Label Content="1-комнатные" Grid.Row="1" Style="{StaticResource Label}"/>
+                    <Label Content="2-комнатные" Grid.Row="2" Style="{StaticResource Label}"/>
+                    <Label Content="3-комнатные" Grid.Row="3" Style="{StaticResource Label}"/>
+                    <Label Content="Квартиры-студии" Grid.Row="4" Style="{StaticResource Label}"/>
+                    <Label Content="Квартиры в квартире" Grid.Row="5" Style="{StaticResource Label}"/>
+                </Grid>
+            </Border>
+
+            <Border CornerRadius="8,8,8,8" Grid.Column="2" BorderBrush="Transparent" Margin="0 0 5 0">
+                <Border.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="C:\Users\polus\OneDrive\Рабочий стол\Соня\2 семестр\ВПКС\ЛР8\Images\FON2.jpg"/>
+                </Border.Background>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="5 5 0 5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Специалисты" FontSize="18"/>
+            <Label Grid.Row="1" Content="Риелторы"/>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-woman-6705551.png"/>
+                    <Label Grid.Column="1" Content="Регина Хисматуллина" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-woman-2922565.png"/>
+                    <Label Grid.Column="1" Content="Полина Багаутинова" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-single-person-5231019.png"/>
+                    <Label Grid.Column="1" Content="Элина кашапова" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-happy-face-2566152.png"/>
+                    <Label Grid.Column="1" Content="Арина Гараева" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-spiderman-1090806.png"/>
+                    <Label Grid.Column="1" Content="Ирина Голобородько" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-woman-6889367.png"/>
+                    <Label Grid.Column="1" Content="Алиса Тухбатуллина" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Label Content="Все риелторы" Style="{StaticResource MouseOverLbl}"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="4" Margin="5 5 0 5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Агентства" FontSize="18"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-real-estate-942089.png"/>
+                    <Label Grid.Column="1" Content="ПОРЯДОК" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-realty-1044312.png"/>
+                    <Label Grid.Column="1" Content="Новострой Инвест " Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-real-estate-305517.png"/>
+                    <Label Grid.Column="1" Content="ЧАР" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-real-estate-5852310.png"/>
+                    <Label Grid.Column="1" Content="Бюро недвижимости" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-home-4478452.png"/>
+                    <Label Grid.Column="1" Content="Визит" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="/1;component/Resources/free-icon-deal-8857908.png"/>
+                    <Label Grid.Column="1" Content="ВАШ ДОМ" Style="{StaticResource MouseOverLbl}"/>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Label Content="Все агентства" Style="{StaticResource MouseOverLbl}"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

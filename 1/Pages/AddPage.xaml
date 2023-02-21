@@ -1,0 +1,58 @@
+﻿<Page x:Class="_1.Pages.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"
+      Title="AddPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.06*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Добавление пользователя" Margin="20 0 0 0" FontSize="18"/>
+        <Grid Grid.Row="1">
+            <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Center" Width="500">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="Имя" Grid.Row="0" Margin="85 0 0 0"/>
+                    <TextBox x:Name="NameTxt" Grid.Row="1" Style="{StaticResource AddUserTxt}"/>
+                    <Label Content="Фамлия" Grid.Row="2" Margin="85 0 0 0"/>
+                    <TextBox x:Name="SurnameTxt" Grid.Row="3" Style="{StaticResource AddUserTxt}"/>
+                    <Label Content="Логин" Grid.Row="4" Margin="85 0 0 0"/>
+                    <TextBox x:Name="LoginTxt" Grid.Row="5" Style="{StaticResource AddUserTxt}"/>
+                    <Label Content="Пароль" Grid.Row="6" Margin="85 0 0 0"/>
+                    <TextBox x:Name="PswdTxt" Grid.Row="7" Style="{StaticResource AddUserTxt}"/>
+                    <Label Content="Почта" Grid.Row="8" Margin="85 0 0 0"/>
+                    <TextBox x:Name="EmailTxt" Grid.Row="9"  Style="{StaticResource AddUserTxt}"/>
+                    <Label Content="Телефон" Grid.Row="10" Margin="85 0 0 0"/>
+                    <TextBox x:Name="PhoneTxt" Grid.Row="11" Style="{StaticResource AddUserTxt}"/>
+                    <Button x:Name="AddBtn" Grid.Row="12" HorizontalAlignment="Center" Content="Добавить" Click="AddBtn_Click" Width="200" Height="30" Margin="149,0,149.4,5.6" VerticalAlignment="Bottom">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="30"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>  
+            </Border>
+        </Grid>        
+    </Grid>
+</Page>

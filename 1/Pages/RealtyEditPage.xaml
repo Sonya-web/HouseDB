@@ -1,0 +1,93 @@
+﻿<Page x:Class="_1.Pages.RealtyEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="650" d:DesignWidth="500"
+      Title="RealtyEditPage">
+
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Center" Width="500">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.2*"/>
+                </Grid.RowDefinitions>
+                <Label Content="ID" Grid.Row="0" HorizontalAlignment="Center"/>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <ComboBox Width="220" x:Name="TypeComb" Text="Тип" Grid.Row="0"/>
+                        <TextBox Width="220" x:Name="CountTxt" Text="Кол-во комнат" Grid.Row="1" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="SquareMTxt" Text="кв. м." Grid.Row="2" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="RCTxt" Text="Название ЖК" Grid.Row="3" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="ShortTxt" Text="Дом, корпус, подъезд, этаж, квартира" Grid.Row="4" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox Width="220" x:Name="FullTxt" Text="Область, город, р-н, мкр., ул., д." Grid.Row="0" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="MetroTxt" Text="Метро" Grid.Row="1" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="PriceTxt" Text="Цена" Grid.Row="2" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="PriceForSMTxt" Text="Цена за кв. м." Grid.Row="3" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="PhoneTxt" Text="Телефон" Grid.Row="4" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox Width="220" x:Name="TotalAreaTxt" Text="Общая площадь" Grid.Row="0" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="LivingAreaTxt" Text="Жилая площадь" Grid.Row="1" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="KitchenTxt" Text="Площадь кухни" Grid.Row="2" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="FloorTxt" Text="Этаж" Grid.Row="3" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="1.5*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBox Width="220" x:Name="YearTxt" Text="Год постройки" Grid.Row="0" Height="20" BorderBrush="Transparent" Opacity="0.7"/>
+                        <TextBox Width="220" x:Name="FullDescriptionTxt" Text="Подробное описание" Grid.Row="1" Height="100" BorderBrush="Transparent" Opacity="0.7"/>
+                        <Button x:Name="ChangeBtn" Grid.Row="2" HorizontalAlignment="Center" Content="Изменить" Click="ChangeBtn_Click" Width="200" Height="30">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="30"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

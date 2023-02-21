@@ -1,0 +1,38 @@
+﻿<Page x:Class="_1.Pages.UsersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_1.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UsersPage">
+
+    <Grid>
+        <DataGrid Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" x:Name="DGUser" FontFamily="Georgia" FontSize="12">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Iduser}" Width="0.25*"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="0.7*"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}" Width="*"/>
+                <DataGridTextColumn Header="Логин" Binding="{Binding Login}" Width="*"/>
+                <DataGridTextColumn Header="Пароль" Binding="{Binding Password}" Width="*"/>
+                <DataGridTextColumn Header="Почта" Binding="{Binding Mail}" Width="*"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding PhoneNumber}" Width="*"/>
+                <DataGridTextColumn Header="Роль" Binding="{Binding Role}" Width="*"/>
+                <DataGridTemplateColumn Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="DeleteBtn" Click="DeleteBtn_Click"  Width="100" Height="40" Content="Удалить">
+                                <Button.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="30"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
